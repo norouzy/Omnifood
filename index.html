@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="queries.css" />
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -47,6 +48,20 @@
           </li>
         </ul>
       </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon
+          class="icon-mobile-nav md hydrated"
+          name="menu-outline"
+          role="img"
+          aria-label="menu outline"
+        ></ion-icon>
+        <ion-icon
+          class="icon-mobile-nav md hydrated"
+          name="close-outline"
+          role="img"
+          aria-label="close outline"
+        ></ion-icon>
+      </button>
     </header>
     <main>
       <section class="hero-section">
@@ -230,48 +245,50 @@
             </div>
 
             <div class="diets">
-              <div class="diet-header-box">
-                <h2 class="diet-header">Works with any diet:</h2>
-              </div>
-              <div class="diets-list">
-                <ul class="diets-ul">
-                  <li>
-                    <ion-icon name="checkmark-outline"></ion-icon>
-                    <span class="diet-text">Vegetarian</span>
-                  </li>
-                  <li>
-                    <ion-icon name="checkmark-outline"></ion-icon>
-                    <span class="diet-text">Vegan</span>
-                  </li>
-                  <li>
-                    <ion-icon name="checkmark-outline"></ion-icon>
-                    <span class="diet-text">Pescatarian</span>
-                  </li>
-                  <li>
-                    <ion-icon name="checkmark-outline"></ion-icon>
-                    <span class="diet-text">Gluten-free </span>
-                  </li>
-                  <li>
-                    <ion-icon name="checkmark-outline"></ion-icon>
-                    <span class="diet-text">Lactose-free </span>
-                  </li>
-                  <li>
-                    <ion-icon name="checkmark-outline"></ion-icon>
-                    <span class="diet-text">Keto</span>
-                  </li>
-                  <li>
-                    <ion-icon name="checkmark-outline"></ion-icon>
-                    <span class="diet-text">Paleo</span>
-                  </li>
-                  <li>
-                    <ion-icon name="checkmark-outline"></ion-icon>
-                    <span class="diet-text">Low FODMAP </span>
-                  </li>
-                  <li>
-                    <ion-icon name="checkmark-outline"></ion-icon>
-                    <span class="diet-text">Kid-friendly </span>
-                  </li>
-                </ul>
+              <div class="diets-box">
+                <div class="diet-header-box">
+                  <h2 class="diet-header">Works with any diet:</h2>
+                </div>
+                <div class="diets-list">
+                  <ul class="diets-ul">
+                    <li>
+                      <ion-icon name="checkmark-outline"></ion-icon>
+                      <span class="diet-text">Vegetarian</span>
+                    </li>
+                    <li>
+                      <ion-icon name="checkmark-outline"></ion-icon>
+                      <span class="diet-text">Vegan</span>
+                    </li>
+                    <li>
+                      <ion-icon name="checkmark-outline"></ion-icon>
+                      <span class="diet-text">Pescatarian</span>
+                    </li>
+                    <li>
+                      <ion-icon name="checkmark-outline"></ion-icon>
+                      <span class="diet-text">Gluten-free </span>
+                    </li>
+                    <li>
+                      <ion-icon name="checkmark-outline"></ion-icon>
+                      <span class="diet-text">Lactose-free </span>
+                    </li>
+                    <li>
+                      <ion-icon name="checkmark-outline"></ion-icon>
+                      <span class="diet-text">Keto</span>
+                    </li>
+                    <li>
+                      <ion-icon name="checkmark-outline"></ion-icon>
+                      <span class="diet-text">Paleo</span>
+                    </li>
+                    <li>
+                      <ion-icon name="checkmark-outline"></ion-icon>
+                      <span class="diet-text">Low FODMAP </span>
+                    </li>
+                    <li>
+                      <ion-icon name="checkmark-outline"></ion-icon>
+                      <span class="diet-text">Kid-friendly </span>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
 
@@ -439,8 +456,8 @@
           <p class="subheading">pricing</p>
           <h2 class="second-header">Eating well without breaking the bank</h2>
         </div>
-        <div class="container princing-plans grid--col--2">
-          <div class="plan princing-plan--starter">
+        <div class="container pricing-plans grid--col--2">
+          <div class="plan pricing-plan--starter">
             <div class="plan-header-box">
               <h3 class="plan-header">starter</h3>
               <p class="plan-price">$<strong>399</strong></p>
@@ -472,7 +489,7 @@
               >
             </div>
           </div>
-          <div class="plan princing-plan--complete">
+          <div class="plan pricing-plan--complete">
             <div class="plan-header-box">
               <h3 class="plan-header">complete</h3>
               <p class="plan-price">$<strong>649</strong></p>
@@ -568,38 +585,42 @@
       </section>
 
       <section class="cta-section">
-        <div class="container cta">
-          <div class="cta-content">
-            <h2 class="cta-header">Get your first meal for free!</h2>
-            <p class="cta-text">
-              Healthy, tasty and hassle-free meals are waiting for you. Start
-              eating well today. You can cancel or pause anytime. And the first
-              meal is on us!
-            </p>
-            <form class="cta-form" action="#">
-              <div>
-                <label for="full-name">Full Name </label>
-                <input id="full-name" placeholder="John Smith" type="text" />
-              </div>
-              <div>
-                <label for="email">Email address </label>
-                <input id="email" placeholder="me@example.com" type="email" />
-              </div>
-              <div>
-                <label for="select-where">Where did you hear from us?</label>
-                <select id="select-where" required="">
-                  <option value="">Please choose one option:</option>
-                  <option value="friends">Friends and family</option>
-                  <option value="youtube">YouTube video</option>
-                  <option value="podcast">Podcast</option>
-                  <option value="ad">Facebook ad</option>
-                  <option value="others">Others</option>
-                </select>
-              </div>
-              <button class="btn btn--form btn-transition">Sign up now</button>
-            </form>
+        <div class="container">
+          <div class="cta">
+            <div class="cta-content">
+              <h2 class="cta-header">Get your first meal for free!</h2>
+              <p class="cta-text">
+                Healthy, tasty and hassle-free meals are waiting for you. Start
+                eating well today. You can cancel or pause anytime. And the
+                first meal is on us!
+              </p>
+              <form class="cta-form" action="#">
+                <div>
+                  <label for="full-name">Full Name </label>
+                  <input id="full-name" placeholder="John Smith" type="text" />
+                </div>
+                <div>
+                  <label for="email">Email address </label>
+                  <input id="email" placeholder="me@example.com" type="email" />
+                </div>
+                <div>
+                  <label for="select-where">Where did you hear from us?</label>
+                  <select id="select-where" required="">
+                    <option value="">Please choose one option:</option>
+                    <option value="friends">Friends and family</option>
+                    <option value="youtube">YouTube video</option>
+                    <option value="podcast">Podcast</option>
+                    <option value="ad">Facebook ad</option>
+                    <option value="others">Others</option>
+                  </select>
+                </div>
+                <button class="btn btn--form btn-transition">
+                  Sign up now
+                </button>
+              </form>
+            </div>
+            <div class="cta-img"></div>
           </div>
-          <div class="cta-img"></div>
         </div>
       </section>
     </main>
