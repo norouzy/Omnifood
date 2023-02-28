@@ -750,3 +750,16 @@ FONT SIZE SYSTEM (px) 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 /
   cursor: pointer;
   display: none;
 }
+
+.sticky .header {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  top: 0;
+  bottom: 0;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: rgba(255, 255, 255, 0.97);
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
