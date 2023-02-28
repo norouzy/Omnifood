@@ -744,7 +744,8 @@ FONT SIZE SYSTEM (px) 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 /
   width: 4.8rem;
   height: 4.8rem;
 }
-.icon-mobile-nav[name="close-outline"] {
+.icon-mobile-nav[name="close-outline"],
+.icon-mobile-nav[name="menu-outline"] {
   /* background-color: #51cf66; */
   display: none;
 }

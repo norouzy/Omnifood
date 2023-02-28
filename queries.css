@@ -143,6 +143,9 @@
     visibility: visible;
     pointer-events: all;
   }
+  .icon-mobile-nav[name="menu-outline"] {
+    display: block;
+  }
   .open .icon-mobile-nav[name="close-outline"] {
     display: block;
   }
