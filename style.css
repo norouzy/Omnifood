@@ -631,7 +631,7 @@ FONT SIZE SYSTEM (px) 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 /
 
 .cta-img {
   /* width: 100%; */
-  background-image: url("../img/eating.jpg");
+  background-image: url("./img/eating.jpg");
   background-size: cover;
   background-position: center;
 }
